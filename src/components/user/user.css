@@ -1,0 +1,29 @@
+.from{
+
+    width: 400px;
+    margin:40px auto ;
+    padding: 30px ;
+    border: 1px solid black;
+}
+.from input{
+    display: block;
+    width: 100%;
+    margin: 22px auto;
+    padding: 12px 1px; 
+}
+.from button{
+    width: 300px;
+    padding: 13px;
+    display: block;
+font-size: 20px;
+ font-weight: bolder;
+ background-color: black;
+ color: white;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: auto;
+}
+.from h1{
+    margin: auto;
+    text-align: center;
+}

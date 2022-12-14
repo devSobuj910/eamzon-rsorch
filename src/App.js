@@ -6,6 +6,9 @@ import Shop from './components/Shop/Shop';
 import Orders from './components/Orders/Orders';
 import Inventory from './components/Inventory/Inventory';
 import { productsAndCartLoader } from './loaders/productsAndCartLoader';
+import Login from './components/user/Login';
+import Register from './components/user/Register';
+import Praivate from './PrivateRout/Praivate';
 
 
 function App() {
@@ -22,7 +25,7 @@ function App() {
         {
           path:'orders',
           loader: productsAndCartLoader,
-          element: <Orders></Orders>
+          element: <Praivate><Orders></Orders></Praivate>
         },
         {
           path: 'inventory',
@@ -30,7 +33,15 @@ function App() {
         },
         {
           path:'about',
-          element:<About></About>
+          element:<Praivate><About></About></Praivate>
+        },
+        {
+          path:"/login",
+          element:<Login></Login>
+        },
+        {
+          path:"/register",
+          element:<Register></Register>
         }
       ]
     },
@@ -44,3 +55,6 @@ function App() {
 }
 
 export default App;
+
+
+//git test 
